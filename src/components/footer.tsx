@@ -12,7 +12,7 @@ export default function Footer() {
     <a href="http://www.linkedin.com/in/dschechtman" target="_" className='pr-[10px]'>
       <Image src="/LinkedIn.png" width={LINKED_IN_LOGO_SIZE} height={LINKED_IN_LOGO_SIZE} alt="linked-in link"></Image>
     </a>
-    <a href="https://drive.google.com/file/d/1AUM2aZNUhwm3SL0fftS3mpdtqrAvPoHs/view?usp=drive_link" target='_'>
+    <a href="https://drive.google.com/file/d/1N7jD9zWmnmxuqTrIFBi0BjeGIkigOqn5/view?usp=sharing" target='_'>
       <Image src="/Resume.png" width={RESUME_LOGO_SIZE} height={RESUME_LOGO_SIZE} alt="link to resume"></Image>
     </a>
   </div>
