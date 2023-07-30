@@ -28,6 +28,7 @@ body {
   rgb(var(--background-start-rgb));
   overflow: hidden;
   height: 100%;
+  background-image: url("/grey scale table 2.png");
 }
 
 .RootGrid {
@@ -38,9 +39,9 @@ body {
   "nav display"
   "nav footer"
   ;
-  width: 99%;
-  height: 98%;
-  margin: auto;
+  width: 95%;
+  height: 100%;
+  margin-left: auto;
   padding-top: 2vh;
   column-gap: 5px;
   row-gap: 5px;
@@ -50,10 +51,10 @@ body {
   grid-area: display;
   text-align: center;
   overflow-y: auto;
-  border-left: 1px solid white;
-  border-bottom: 1px solid white;
-  margin: .025%;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  color: black;
 }
 
 .Nav {
@@ -69,8 +70,13 @@ body {
   grid-area: footer;
 }
 
+.Paper {
+  font-family: "Merienda";;
+  background-color: rgb(246, 243, 232);
+  border-radius: 5px;
+}
+
 form {
-  border: 1px solid red;
   width: 55%;
   margin: auto;
 

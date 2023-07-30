@@ -9,7 +9,7 @@ interface Prop {
 
 export default function About(prop: Prop) {
   return <div>
-    <H2 className='bg-blue-400 text-black'>Hi, I'm Daniel Schechtman</H2>
+    <H2 className='my-[10px]'>Hi, I'm Daniel Schechtman</H2>
     <p className='text-left px-[5px] leading-relaxed indent-8'>
       Welcome to my portfolio, I am glad you are here. I am a software engineer, and aspiring backend engineer.
       I went to Carthage College to get a Bachelors in Computer Science. 
@@ -31,10 +31,10 @@ export default function About(prop: Prop) {
 
     <br/>
     <br/>
-    <H2 className='bg-blue-400 text-black'>About this site</H2>
+    <H2 className=''>About this site</H2>
 
     <br/>
-    <H3 className='bg-orange-400 text-black'>why was it made?</H3>
+    <H3 className=''>why was it made?</H3>
     <p className='text-left px-[5px] leading-relaxed indent-8'>
       This site was made for 2 reasons. 1.) As a central location to put all of my project to showcase
       my skills. 2.) To give me a place where I can go into more detail about myself and my skillsets that isn't
@@ -43,7 +43,7 @@ export default function About(prop: Prop) {
     </p>
 
     <br />
-    <H3 className='bg-orange-400 text-black'>What is this site's tech stack?</H3>
+    <H3 className=''>What is this site's tech stack?</H3>
     <p className='text-left px-[5px] leading-relaxed indent-8'>
       This site was built using NextJS on the back end, ReactJS on the frontend. With Tailwindcss to take the 
       skeleton of the site and make it look good, and prisma to help manange data bases.
@@ -51,7 +51,7 @@ export default function About(prop: Prop) {
 
     <br />
     <br />
-    <H3 className='bg-orange-400 text-black'>Send me a message!</H3>
+    <H3 className=''>Send me a letter</H3>
     <ContactForm/>
     
   </div>

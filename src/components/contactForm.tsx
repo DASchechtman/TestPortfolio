@@ -36,7 +36,7 @@ export default function ContactForm() {
         <textarea name="message" id="message" cols={30} rows={10}></textarea>
         <br />
         <button type='submit' className='bg-green-600 rounded px-[10px] block'>
-            Send Message!
+            Send Letter!
         </button>
     </form>
 }

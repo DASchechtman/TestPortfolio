@@ -25,13 +25,19 @@ export default function RootLayout({
   const classes = `${inter.className}`
   return <>
     <html lang="en">
-      <body className={classes}>
-        <div className="RootGrid">
-          <NavBar></NavBar>
-          {children}
-          <Footer></Footer>
-        </div>
-      </body>
-    </html>
-  </>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet"/>
+      </head>
+
+            <body className={classes}>
+              <div className="RootGrid">
+                <NavBar></NavBar>
+                {children}
+                <Footer></Footer>
+              </div>
+            </body>
+          </html>
+        </>
 }
