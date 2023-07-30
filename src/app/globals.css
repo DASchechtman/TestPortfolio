@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --nav-span: 2;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,12 +17,77 @@
   }
 }
 
+html,
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  )
+  rgb(var(--background-start-rgb));
+  overflow: hidden;
+  height: 100%;
+}
+
+.RootGrid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "nav display"
+  "nav footer"
+  ;
+  width: 99%;
+  height: 98%;
+  margin: auto;
+  padding-top: 2vh;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.Display {
+  grid-area: display;
+  text-align: center;
+  overflow-y: auto;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: .025%;
+  width: 100%;
+}
+
+.Nav {
+  grid-area: nav;
+  max-width: max-content;
+}
+
+.Nav > * {
+  text-align: start;
+}
+
+.Footer {
+  grid-area: footer;
+}
+
+form {
+  border: 1px solid red;
+  width: 55%;
+  margin: auto;
+
+  & label {
+    text-align: left;
+    display: block;
+  }
+
+  & input {
+    width: 100%;
+    display: block;
+    color: black;
+  }
+
+  & textarea {
+    width: 100%;
+    display: block;
+    color: black;
+  }
 }
